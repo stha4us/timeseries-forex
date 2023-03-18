@@ -22,3 +22,11 @@ asp_forecast:
 	python api/timeseries/run_train.py 
 	python api/timeseries/run_model_predict.py
 	python api/timeseries/run_report.py
+
+.PHONY: run_pipeline
+run_pipeline:
+	python forex/scripts/run_config.py
+	python forex/scripts/run_staging.py
+	python forex/scripts/run_train.py
+	python forex/scripts/run_forecast.py
+	python forex/scripts/run_postprocess.py
