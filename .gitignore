@@ -6,6 +6,15 @@ bin-release/
 
 # Other files and folders
 .settings/
+static/*
+.venv
+.idea
+__pycache__/
+*.pyc
+api/*
+!api/user
+!api/templates
+!api/timeseries
 
 # Executables
 *.swf

@@ -1,0 +1,28 @@
+{% include "emailnotification/header.html" %}
+
+<tr>
+        <td colspan="3">
+            <p><strong>Please check the progress status for data preparation: </strong></p>
+<!--            <p>Below are statistics comparisons on week, month and year period:</p>-->
+        </td>
+    </tr>
+     <tr>
+        <td colspan="3"><strong>{{ status }}</strong></td>
+    </tr>
+
+    <tr>
+        <td colspan="3"><strong>{{ message }}</strong></td>
+    </tr>
+
+
+     <tr>
+        <td colspan="3">&nbsp;</td>
+    </tr>
+        <br>
+
+   {% include "emailnotification/footer.html" %}
+    </tbody>
+</table>
+
+</body>
+</html>
